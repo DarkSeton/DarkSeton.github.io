@@ -1,0 +1,691 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+}
+section
+{
+    position: relative;
+    padding: 10%;
+    height: auto;
+}
+h1
+{
+    color: #111;
+    font-size: 5em;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+h2
+{
+    color: #111;
+    font-size: 2.5em;
+    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+h3
+{
+    font-size: 1.5em;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+}
+p
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+/* ID STYLES */
+#button
+{
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border: 0.15em solid #111;
+    color: #111;
+}
+#button:hover
+{
+    border: 0.15em solid #D62126;
+    color: #D62126;
+}
+
+#sectiontitle /*Not using for about section*/
+{
+    color: #fff;
+    font-weight: 300;
+    z-index: 90;
+    position: relative;
+}
+#sectiontitleBlack
+{
+    color: #111;
+    font-weight: 300;
+}
+#section_line
+{
+    width: 4rem;
+    height: 0.17rem;
+    background: #D62126;
+    z-index: 9;
+    position: relative;
+    margin: auto;
+}
+
+/*  ~~~~~~~~~~~~~~  NAVIGATION MENU  ~~~~~~~~~~~~~~ */  
+.menu
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*Push title and button to opposite*/
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 10px 5%; /*top and left*/
+    z-index: 10;   /* show over home */ 
+    background-color: #fff;
+}
+/* Logo - the pat icon on top left */
+.menu .logo
+{
+    color: #111;
+    font-weight: 400;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    text-decoration: none; /* remove underline*/
+    letter-spacing: 3px;
+    padding-left: 10px;
+}
+.menu .logo:hover
+{
+    color: #D62126;
+}
+/* Menu on top right */
+.menu ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li
+{
+    list-style: none; /* No bullet points */
+    margin-left: 20px; /* space menu items*/
+}
+.menu ul li a /* text style */
+{
+    text-decoration: none; /* remove underline */
+    padding: 6px 15px;
+    color: #111;
+    /* always have border so we just need to change color */
+    border: 2px solid #fff;  
+}
+.menu ul li a:hover, 
+.menu ul li a.active
+{
+    color: #D62126;
+    border: 2px solid #D62126;
+}
+
+/*  ~~~~~~~~~~~~~~  HOME SECTION  ~~~~~~~~~~~~~~ */  
+.home
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;  /*vh so cover entire screen*/
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.home img
+{
+    position: absolute;
+    top: 9%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.home h1
+{
+    position: absolute;
+    margin-bottom: 22vh;
+    margin-left: 15%;
+    z-index: 9; /*btw z index can't be in id style*/
+}
+.hometxt-color
+{
+    color:#D62126;
+}
+.home a
+{
+    z-index: 9;
+    position: absolute;
+    margin-left: 15%;
+}
+
+/*  ~~~~~~~~~~~~~~  ABOUT  ~~~~~~~~~~~~~~ */  
+.about
+{
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20%;
+    height: 100vh;
+}
+.about__content
+{
+    text-align: left;
+    padding-left: 15%;
+}
+
+/* red div line styling - different for about section */
+#about_line
+{
+    width: 4rem;
+    height: 0.3rem;
+    background: #D62126;
+    z-index: 9;
+}
+
+/* about text styling */
+.about h2 /*Different from other section titles*/
+{
+    color: #111;
+    font-weight: 400;
+    font-size: 3rem;
+    padding-bottom: 15px;
+}
+.about p
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    padding-bottom: 5px;    
+}
+.about .nickname
+{
+    color: #111;
+    font-weight: 400;
+    font-style: italic;
+}
+.about .quote
+{
+    font-style: italic;
+    color: #D62126;
+    padding: 25px 40px;
+    padding-bottom: 45px;
+}
+
+/* Social media section */
+.aboutsocialmedia
+{
+    padding-bottom: 25px;
+}
+/* league stats button */
+.about a
+{
+    font-size: 1.7rem;
+    color: #111;
+    margin: 0 0.2rem; /*side margin*/
+}
+.about a:hover
+{
+    color: #D62126;
+}
+
+/*  ~~~~~~~~~~~~~~  SERVICES  ~~~~~~~~~~~~~~ */  
+.services
+{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    background-color: #111;
+    min-height: 100vh;
+}
+.servicestext-color
+{
+    color:#D62126;
+}
+.servicescontent_color
+{
+    color: #D62126;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.services h3
+{
+    font-size: 1.5em;
+    font-weight: 300;
+    padding-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+.quote
+{
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+/* Service button */
+#servicesbtn_div
+{
+    position: relative;
+    margin: 0 auto;
+    bottom: -80px; /*space from cards*/
+    padding-bottom: 2.5em;
+}
+#service_btn
+{
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.3em;
+    border: 0.15rem solid #fff;
+    color: #fff;
+    background-color: #111;
+}
+#service_btn:hover
+{
+    border: 0.15rem solid #D62126;
+    color: #D62126;
+}
+
+/* Cards */
+.card__container
+{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    padding-top: 13vh;
+    margin: auto; /*center it*/
+}
+/* Back card portion */
+.card__container .card
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: auto;
+    max-width: 300px;
+    height: 160px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;    
+}
+.card__container .card:hover
+{
+    height: 390px;
+}
+/* Image card portion */
+.card__container .card .imgbox
+{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+}
+.card__container .card .imgbox img
+{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+/* Text in the card */
+.card__container .card .card__content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.card__container .card:hover .card__content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.2s;
+}
+
+/*  ~~~~~~~~~~~~~~  MEDIA  ~~~~~~~~~~~~~~ */ 
+.media
+{
+    background-color: #fff;
+    text-align: center;
+    align-content: center;
+    min-height: 100vh;
+}
+/*Centering the red div line*/
+#media_line
+{
+    width: 4rem;
+    height: 0.3rem;
+    background: #D62126;
+    margin: auto; /*special id for it to center*/
+}
+
+.mediaFilter ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.mediaFilter ul li
+{
+    list-style: none; /* remove bullet points*/
+    padding: 8px 20px;
+    margin: 17px;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: 2px solid #fff; /*prevent movement when change to red*/
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2); 
+}
+.mediaFilter ul li:hover,
+.mediaFilter ul li:active
+{
+    border: 2px solid #D62126; 
+    color: #D62126;
+}
+
+/* Images grid */
+.mediagrid
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mediagrid .mediaBox
+{
+    position: relative;
+    width: 21.5rem;
+    height: 21.5rem;
+    margin: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+}
+.mediagrid .mediaBox img
+{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    filter: grayscale(100%);
+}
+.mediagrid .mediaBox img:hover
+{
+    transform: scale(1.1);
+    filter: grayscale(0%); /*Images change to color when hovered*/
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+}
+
+/*  ~~~~~~~~~~~~~~  CONTACT  ~~~~~~~~~~~~~~ */ 
+
+/* ~~~~ CONTACT INTRO ~~~~ */
+.contact
+{
+    background-color: #111;
+    text-align: center;
+    align-content: center;
+    height: auto;
+}
+/*Centering the red div line*/
+#contact_line
+{
+    width: 4rem;
+    height: 0.3rem;
+    background: #D62126;
+    margin: auto; /*special id for it to center*/
+}
+
+/* ~~~~ LAYOUT AND BASIC STYLE ~~~~ */
+.contact_container /*social media and contact form side by side*/
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+#subsection_title
+{
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.8rem;
+    padding-top: 4rem;
+    margin-bottom: 1.6rem;
+    font-style: italic;
+}
+
+/* ~~~~ SOCIAL MEDIA LINKS ~~~~*/
+.socialmedia_section
+{
+    width: 20vw;
+}
+.socialmediabtn_div
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+/*white to red button*/
+#socialmediaButton
+{
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border: 0.12em solid white;
+    color: white;
+    margin-top: 3rem;
+}
+#socialmediaButton:hover
+{
+    border: 0.12em solid #D62126;
+    color: #D62126;
+}
+
+
+/* ~~~~ CONTACT FORM ~~~~ */
+.contactform_section
+{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+.contact .form
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.input /*Input forms*/
+{
+    border: 0.1rem solid #fff;
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #111;
+}
+.input:hover
+{
+    border: 0.1rem solid #D62126;
+    color: #D62126;
+}
+/* divs for spacing inputs */
+.formBtn,
+.formMsg,
+.formEmail,
+.formName
+{
+    padding: 1rem;
+    width: 100%;
+}
+
+/* Contact button */
+.contact_btn
+{
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.3em;
+    border: 0.15rem solid #fff;
+    color: #fff;
+    background-color: #111;
+}
+.contact_btn:hover
+{
+    border: 0.15rem solid #D62126;
+    color: #D62126;
+}
+
+/*  ~~~~~~~~~~~~~~  FOOTER  ~~~~~~~~~~~~~~ */  
+.footer
+{
+    text-align: center;
+    padding: 1.5rem 0; /*top*/
+    background-color: #fff;
+    color: #111;
+}
+.footer p
+{
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+/* Social media icons */
+.socialmediabar
+{
+    margin-bottom: 0.5em
+}
+.footer a
+{
+    font-size: 1.7rem;
+    color: #111;
+    margin: 0 0.2rem; /*side margin*/
+}
+.footer a:hover
+{
+    color: #D62126;
+}
+
+/*  ~~~~~~~~~~~~~~  MEDIA QUERIES  ~~~~~~~~~~~~~~ */ 
+@media screen and (max-width: 1350px){
+    /* Making the services section vertical */
+    .services
+    {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+    #services_line
+    {
+        position: relative;
+        margin: auto; /*center it*/
+        z-index: 10;
+    }
+
+    /* Services cards vertical */
+    .services .card__container
+    {
+        padding-top: 12vh;
+        margin: 0 auto; /*center it*/
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #cardspacer /*vertical spacing for cards*/
+    {
+        height: 160px;
+        width: 50px;
+    }
+}
+@media screen and (max-width: 1300px){
+    /* Adjust for contact section to be one column*/
+    .contact_container /*social media and contact form side by side*/
+    {
+        display: inline-block;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+    .contactform_section,
+    .socialmedia_section
+    {
+        width: 60vw;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 900px){
+    /* Adjusting for mobile for the home section */
+    /*Wrap about image and text*/
+    .about
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Home stuff */
+    .home h1
+    {
+        margin-bottom: 18vh;
+        margin-left: 3vw;
+    }
+    .home a
+    {
+        margin-left: 3vw;
+        margin-top: 15vh;
+    }
+    /* About stuff */
+    .about .about__img
+    {
+        margin-bottom: 10vh; /*Padding under image*/
+    }
+
+}
+@media screen and (max-width: 530px){
+    /* Making the text two lines for mobile */
+    .menu ul
+    {
+        visibility: hidden;
+    }
+    .home h1
+    {
+        margin-bottom: 25vh;
+        margin-right: 30vw; /*Make text two lines*/
+    }
+    .home a
+    {
+        margin-top: 25vh;
+    }
+    
+}
