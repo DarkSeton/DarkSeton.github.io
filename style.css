@@ -11,6 +11,7 @@
     font-family: 'Oswald', sans-serif;
     scroll-behavior: smooth;
 }
+
 section
 {
     position: relative;
@@ -652,8 +653,8 @@ p
     {
         display: flex;
         flex-wrap: wrap;
+        height: auto;
     }
-
     /* Home stuff */
     .home h1
     {
